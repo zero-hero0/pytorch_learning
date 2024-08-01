@@ -1,0 +1,16 @@
+.idea
+.pytest_cache
+report
+xml
+venv
+*.log
+cifdataset/
+.pth
+.zip
+data/
+dataset/
+data_loader/
+*/
+vgg16_method1.pth
+vgg16_method2.pth
+vgg16_method3.pth
