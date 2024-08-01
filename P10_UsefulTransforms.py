@@ -1,6 +1,14 @@
-from PIL import  Image
+from PIL import Image
 from torch.utils.tensorboard import SummaryWriter
 from torchvision import transforms
+#transforms.Compose()：用于将多个转换函数组合在一起。
+
+# transforms.ToTensor()：用于将图像（PIL 图像或 OpenCV 图像）转换为张量（Tensor）。
+# transforms.Normalize()：用于对图像张量进行归一化。
+# transforms.Resize()：用于调整图像大小。
+# transforms.CenterCrop()：用于从图像中心裁剪指定大小的图像。
+# transforms.RandomHorizontalFlip()：用于对图像进行水平翻转（概率为 0.5）。
+# transforms.RandomCrop()：用于随机裁剪图像。
 
 writer = SummaryWriter("logs")
 img = Image.open("image/R-C.png")
