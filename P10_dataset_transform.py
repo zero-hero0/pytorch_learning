@@ -10,5 +10,5 @@ test_set = torchvision.datasets.CIFAR10(root="./cifdataset", train=False, transf
 
 writer = SummaryWriter("p10")
 for i in range(10):
-    img, target = test_set[i]
+    img, target = test_set[i] #之所以可以直接对类用索引是因为Dadaset的__getitem__方法
     writer.add_image("test_set", img, i)
