@@ -7,7 +7,7 @@ vgg16_1 = torch.load("vgg16_method1.pth")
 # print(vgg16_1)
 
 vgg16_2 = torchvision.models.vgg16(pretrained=False)
-vgg16_2.load_state_dict(torch.load("vgg16_method2.pth"))
+vgg16_2.load_state_dict(torch.load("vgg16_method2.pth")) # 存储方式不同加载的方式也不同
 # print(vgg16_2)
 
 # class Tudui(nn.Module):
